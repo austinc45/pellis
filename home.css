@@ -1,0 +1,58 @@
+body{
+    background-color:  #2C5763;
+}
+#title{
+    font-size: 40px;
+    color: orange;
+}
+
+.header{
+    color: black;
+}
+.infor{
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    text-decoration: none;
+    color: white;
+    margin-right: 250px;
+}
+a{
+    text-decoration: none;
+}
+
+#home{
+    color:#63A9BB ;
+    margin-right: 250px;
+}
+
+#mainNavBar{
+    display: flex;
+    justify-content:space-between;
+    font-family:fantasy;
+    background-color: #1C2C35;
+    border: 10px;
+    border-style: groove;
+    border-color: orange;
+    color:white;
+    font-size: 75px;
+    padding: 10px;
+    
+}
+.navbar:hover{
+    background-color: gray;
+    opacity: 0.5;
+}
+#logo{
+    width: 100px;
+}
+#header{
+    font-size: 100%;
+}
+#infor{
+    font-size: 100%;
+}

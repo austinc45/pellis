@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#mainNavBar{
+    display: flex;
+    justify-content:space-between;
+    font-family:fantasy;
+    background-color:#1C2C35;
+    border: 10px;
+    border-style: groove;
+    border-color: orange;
+    color:rgb(255, 255, 255);
+    font-size: 75px;
+    padding: 10px;
+    
+}
+.navbar:hover{
+    background-color: gray;
+    opacity: 0.5;
+}
+#logo{
+    width: 100px;
+}
+a{
+    text-decoration: none;
+}
+#Quiz{
+    color: #63A9BB;
+    margin-right: 250px;
+}
+.navbar{
+    text-decoration: none;
+    color: white;
+    margin-right: 250px;
+}

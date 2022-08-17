@@ -18,6 +18,7 @@ let array = [
   "images/scabies.jpg",
   "images/MolluscumC1.jpg",
   "images/monkeypox2.jpg",
+  "images/herpes1.webp"
 ];
 let array2 = [
   "acne",
@@ -25,8 +26,9 @@ let array2 = [
   "scabbies",
   "Molluscum contagiosum",
   "monkeypox",
+  'herpes'
 ];
-let wrong = ["wrong", "wrong", "wrong", "wrong", "wrong"];
+let wrong = ["wrong", "wrong", "wrong", "wrong", "wrong",'wrong'];
 let quizEnd = document.querySelector("#finish");
 
 inputEczema.onclick = function () {

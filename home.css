@@ -56,3 +56,29 @@ a{
 #infor{
     font-size: 100%;
 }
+@media(max-width:1080px){
+#mainNavBar{
+    flex-direction: column;
+    font-size:190% ;
+    width: 20%
+    
+}
+#logo{
+    width:80%;
+}
+#layout{
+    display: flex;
+    flex-direction: row;
+}
+#layout2{
+    display: flex;
+    flex-direction: column;
+}
+#title{
+    font-size: 150%;
+}
+.skinContainer{
+    font-size: 10px;
+}
+
+};

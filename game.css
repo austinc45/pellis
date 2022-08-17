@@ -16,6 +16,7 @@
     font-size: 75px;
     padding: 10px;
     
+    
 }
 .navbar:hover{
     background-color: gray;
@@ -35,4 +36,13 @@ a{
     text-decoration: none;
     color: white;
     margin-right: 250px;
+}
+
+@media(max-width:500){
+
+
+}
+
+#image{
+    width: 20%;
 }

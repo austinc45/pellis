@@ -18,23 +18,33 @@ let array = [
   "images/scabies.jpg",
   "images/MolluscumC1.jpg",
   "images/monkeypox2.jpg",
-  "images/herpes1.webp"
+  "images/herpes1.webp",
+  "images/eczema1.jpg",
 ];
+let quizLength = array.length;
 let array2 = [
   "acne",
   "monkeypox",
   "scabbies",
   "Molluscum contagiosum",
   "monkeypox",
-  'herpes'
+  "herpes",
+  "eczema",
 ];
-let wrong = ["wrong", "wrong", "wrong", "wrong", "wrong",'wrong'];
+let wrong = [
+  "https://www.mayoclinic.org/diseases-conditions/acne/symptoms-causes/syc-20368047",//acne
+  "https://www.cdc.gov/poxvirus/monkeypox/symptoms.html",//monkey
+  "https://www.cdc.gov/parasites/scabies/gen_info/faqs.html#:~:text=Scabies%20is%20an%20infestation%20of,a%20pimple%2Dlike%20skin%20rash.", //scabies
+  "https://www.cdc.gov/poxvirus/molluscum-contagiosum/index.html",//molluscum
+  "https://www.cdc.gov/poxvirus/monkeypox/symptoms.html",//monkey
+  "https://www.cdc.gov/std/herpes/stdfact-herpes.htm",//herpes
+
+];
 let quizEnd = document.querySelector("#finish");
 
 inputEczema.onclick = function () {
   answer = "eczema";
   if (answer == array2[count]) {
-    console.log("correct");
     correct++;
   } else {
     paragraph.innerHTML = wrong[count];
@@ -92,9 +102,14 @@ nextQ.onclick = function () {
   if (count == array.length) {
     noneP.style.display = "none";
     let end = document.createElement("p");
-    end.innerHTML = "your score was based on luck";
+    end.innerHTML =
+      "your score" +
+      correct +
+      "/" +
+      quizLength +
+      "was based on luck. It is very difficult to identify monkeypox based on the lesions. In order to identify monkeypox you need to get tested by your dermatologist";
     quizEnd.appendChild(end);
-    console.log(end)
-    console.log(quizEnd)
+    console.log(end);
+    console.log(quizEnd);
   }
 };

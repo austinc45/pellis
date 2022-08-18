@@ -79,7 +79,19 @@ h1{
     color:#1C2C35;
 }
 
+#finish{
+    font-size: 50px;
+}
 
+
+#endQuiz{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#testMonkey{
+    display: none;
+}
 
 @media(max-width:415px){
     #mainNavBar{
@@ -122,5 +134,10 @@ flex-direction: column;
 }
 #question{
 font-size: 60px;
+}
+#endQuiz{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
 }
 }

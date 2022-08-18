@@ -13,6 +13,8 @@ let nextQ = document.querySelector("#next");
 let paragraph = document.querySelector("#incorrect");
 let noneP = document.querySelector("#none");
 let website = document.querySelector('#link')
+let end = document.createElement("p");
+let imageTest = document.querySelector('#testMonkey')
 let array = [
   "images/acne1.png",
   "images/monkeypox1.jpg",
@@ -50,7 +52,7 @@ inputEczema.onclick = function () {
     paragraph.innerHTML = 'correct'
     paragraph.href = '#'
   } else {
-    paragraph.innerHTML = wrong[count];
+    paragraph.innerHTML = "Click here for more information on: " + array2[count];;
     paragraph.href = wrong[count]
   }
 };
@@ -62,7 +64,7 @@ inputAcne.onclick = function () {
     paragraph.innerHTML = 'correct'
     paragraph.href = '#'
   } else {
-    paragraph.innerHTML = wrong[count];
+    paragraph.innerHTML = "Click here for more information on: " + array2[count];;
     paragraph.href = wrong[count]
   }
 };
@@ -74,7 +76,7 @@ inputHerpes.onclick = function () {
     paragraph.innerHTML = 'correct'
     paragraph.href = '#'
   } else {
-    paragraph.innerHTML = wrong[count];
+    paragraph.innerHTML = "Click here for more information on: " + array2[count];;
     paragraph.href = wrong[count]
   }
 };
@@ -86,7 +88,7 @@ inputMonkey.onclick = function () {
     paragraph.innerHTML = 'correct'
     paragraph.href = '#'
   } else {
-    paragraph.innerHTML = wrong[count];
+    paragraph.innerHTML = "Click here for more information on: " + array2[count];;
     paragraph.href = wrong[count]
   }
 };
@@ -98,7 +100,7 @@ inputScabbies.onclick = function () {
     paragraph.innerHTML = 'correct'
     paragraph.href = '#'
   } else {
-    paragraph.innerHTML = wrong[count];
+    paragraph.innerHTML = "Click here for more information on: " + array2[count];;
     paragraph.href = wrong[count]
   }
 };
@@ -120,15 +122,14 @@ nextQ.onclick = function () {
   imageSkin.src = array[count];
   if (count == array.length) {
     noneP.style.display = "none";
-    let end = document.createElement("p");
-    end.innerHTML =
-      "your score " +
+    
+    quizEnd.innerHTML =
+      "Your score " +
       correct +
       "/" +
       quizLength +
-      "was based on luck. It is very difficult to identify monkeypox based on the lesions. In order to identify monkeypox you need to get tested by your dermatologist";
-    quizEnd.appendChild(end);
-    console.log(end);
-    console.log(quizEnd);
+      " was based on luck. It is very difficult to identify monkeypox based on the lesions. In order to identify monkeypox you need to get tested by your doctor.";
+    imageTest.style.display = 'block'
+  
   }
 };

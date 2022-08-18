@@ -7,17 +7,18 @@ let inputMolluscum = document.querySelector("#buttonM");
 let count = 0;
 let imageSkin = document.querySelector("#image");
 let answer;
-let correct;
+let correct = 0;
 let pDiv = document.querySelector("#resource");
 let nextQ = document.querySelector("#next");
 let paragraph = document.querySelector("#incorrect");
 let noneP = document.querySelector("#none");
+let website = document.querySelector('#link')
 let array = [
   "images/acne1.png",
   "images/monkeypox1.jpg",
   "images/scabies.jpg",
   "images/MolluscumC1.jpg",
-  "images/monkeypox2.jpg",
+  "images/monkeypox2.png",
   "images/herpes1.webp",
   "images/eczema1.jpg",
 ];
@@ -46,8 +47,11 @@ inputEczema.onclick = function () {
   answer = "eczema";
   if (answer == array2[count]) {
     correct++;
+    paragraph.innerHTML = 'correct'
+    paragraph.href = '#'
   } else {
     paragraph.innerHTML = wrong[count];
+    paragraph.href = wrong[count]
   }
 };
 inputAcne.onclick = function () {
@@ -55,8 +59,11 @@ inputAcne.onclick = function () {
   if (answer == array2[count]) {
     console.log("correct");
     correct++;
+    paragraph.innerHTML = 'correct'
+    paragraph.href = '#'
   } else {
     paragraph.innerHTML = wrong[count];
+    paragraph.href = wrong[count]
   }
 };
 inputHerpes.onclick = function () {
@@ -64,8 +71,11 @@ inputHerpes.onclick = function () {
   if (answer == array2[count]) {
     console.log("correct");
     correct++;
+    paragraph.innerHTML = 'correct'
+    paragraph.href = '#'
   } else {
     paragraph.innerHTML = wrong[count];
+    paragraph.href = wrong[count]
   }
 };
 inputMonkey.onclick = function () {
@@ -73,8 +83,11 @@ inputMonkey.onclick = function () {
   if (answer == array2[count]) {
     console.log("correct");
     correct++;
+    paragraph.innerHTML = 'correct'
+    paragraph.href = '#'
   } else {
     paragraph.innerHTML = wrong[count];
+    paragraph.href = wrong[count]
   }
 };
 inputScabbies.onclick = function () {
@@ -82,8 +95,11 @@ inputScabbies.onclick = function () {
   if (answer == array2[count]) {
     console.log("correct");
     correct++;
+    paragraph.innerHTML = 'correct'
+    paragraph.href = '#'
   } else {
     paragraph.innerHTML = wrong[count];
+    paragraph.href = wrong[count]
   }
 };
 inputMolluscum.onclick = function () {
@@ -91,8 +107,11 @@ inputMolluscum.onclick = function () {
   if (answer == array2[count]) {
     console.log("correct");
     correct++;
+    paragraph.innerHTML = 'correct'
+    paragraph.href = '#'
   } else {
-    paragraph.innerHTML = wrong[count];
+    paragraph.innerHTML = "Click here for more information on: " + array2[count];
+    paragraph.href = wrong[count]
   }
 };
 nextQ.onclick = function () {
@@ -103,7 +122,7 @@ nextQ.onclick = function () {
     noneP.style.display = "none";
     let end = document.createElement("p");
     end.innerHTML =
-      "your score" +
+      "your score " +
       correct +
       "/" +
       quizLength +

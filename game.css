@@ -42,13 +42,9 @@ a{
     margin-right: 250px;
 }
 
-@media(max-width:500){
 
-
-}
 
 #image{
-    margin-left: 550px;
     width: 40%;
 }
 h1{
@@ -60,4 +56,71 @@ h1{
     display:flex;
     justify-content: center;
     
+}
+#buttons p{
+    display: flex;
+    background-color: orange;
+    border: solid black;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 5px;
+    border-radius: 12px;
+}
+#quizGame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+#incorrect{
+    font-size: 50px;
+    color:#1C2C35;
+}
+
+
+
+@media(max-width:415px){
+    #mainNavBar{
+display: flex;
+flex-direction: column;
+align-items: center;
+    }
+    .navbar{
+        margin-right: 0px;
+    }
+.skinContainer{
+display: flex;
+flex-direction: column;
+}
+.header{
+    border-right: none;
+    border-bottom: solid orange;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+#Quiz{
+    margin-right: 0;
+    padding: 0;
+}
+#h1{
+    font-size: 5px;
+}
+#image{
+    width: 95%;
+    border: solid orange;
+    padding: 2px;
+}
+#buttons{
+    display: flex;
+    flex-direction: column;
+}
+#buttons p {
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+}
+#question{
+font-size: 60px;
+}
 }

@@ -1,7 +1,6 @@
 .navbar{
     text-decoration: none;
     color: white;
-    margin-top: 20px;
     margin-right: 250px;
 }
 a{
@@ -9,7 +8,6 @@ a{
 }
 #chat{
     color:#63A9BB;
-    margin-top: 20px;
     margin-right: 250px;
 }
 
@@ -32,7 +30,6 @@ a{
     opacity: 0.5;
 }
 #logo{
-    margin-top: 25px;
     width: 70px;
 }
 
@@ -54,7 +51,6 @@ a{
 
 body {
     /* size and colors */
-    height: 100vh;
     background-color: var(--primary);
     color: #fff;
 
@@ -188,4 +184,33 @@ form label {
 
 .single-message-username {
     font-weight: 600;
+}
+
+
+@media(max-width:415px){
+    #mainNavBar{
+display: flex;
+flex-direction: column;
+align-items: center;
+    }
+    .navbar{
+        margin-right: 0px;
+    }
+    #home{
+        margin-right: 0px;
+    }
+.skinContainer{
+display: flex;
+flex-direction: column;
+}
+.header{
+    border-right: none;
+    border-bottom: solid orange;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+#chat{
+    margin: 0;
+}
+
 }

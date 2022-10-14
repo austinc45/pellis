@@ -9,16 +9,23 @@
     <script src="game.js" defer></script>
   </head>
   <body>
-    <div id="mainNavBar">
-      <img src="images/logoW.png" id="logo" />
-      <a href="index.html"><div class="navbar">Home</div></a>
-      <a href="game.html"><div id="Quiz">Quiz</div></a>
-      <a href="chat.html"><div class="navbar">Chat</div></a>
-    </div>
+    <div id='toggles'>
+      <div class="navBar">
+          <img id = 'logo' src="images/logoW.png" />
+      </div>
+      <ul id = list>
+          <li>  <a href="index.html" class = 'navbar'>Home</a></li>
+          <li>  <a href="game.html" id = 'quiz'>Quiz</a></li>
+          <li>  <a href="chat.html" class="navbar">Chat</a></li>
+          <li>  <a href = 'doctor.html' class = 'navbar'>Appointment</a></li>
+      </ul>
+      </div>
+      
+    <br>
 
     <div id="none">
         <div id = 'quizGame'>
-      <h1 id = 'question'>Is this Monkey Pox?</h1>
+      <h1 id = 'question'>What skin condition is this?</h1>
       <img id="image" src="images/acne1.png" />
       <br />
       <div id="buttons">

@@ -1,44 +1,48 @@
-body{
-    background-color:  #2C5763;
-}
-
 *{
-    margin: 0;
     padding: 0;
+    margin:0;
+}
+body {
+    font-family: serif;
+}
+a {
+    text-decoration: none;
+    font-family: serif;
 }
 
-
-#mainNavBar{
+#toggles {
     display: flex;
-    justify-content:space-between;
-    font-family:fantasy;
-    background-color:#1C2C35;
-    border: 10px;
-    border-style: groove;
-    border-color: orange;
-    color:rgb(255, 255, 255);
-    font-size: 75px;
-    padding: 10px;
-    
-    
+    align-items: center;
+    background-color:lightslategray;
+
 }
-.navbar:hover{
-    background-color: gray;
-    opacity: 0.5;
+
+.navBar {
+    margin: 0px 200px 0px 0px;
+    height: 100%;
+}
+
+.navbar{
+    color: black;
 }
 #logo{
     width: 100px;
+    height: 100%;
 }
-a{
-    text-decoration: none;
+
+#list{
+    list-style: none;
 }
+#list li{
+display: inline;
+}
+#list li a{
+   padding: 50px;
+   font-size: 50px;
+    }
+
 #Quiz{
     color: #63A9BB;
-    margin-right: 250px;
-}
-.navbar{
-    text-decoration: none;
-    color: white;
     margin-right: 250px;
 }
 

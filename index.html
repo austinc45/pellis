@@ -6,80 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pellis</title>
     <link rel="stylesheet" href="home.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
-<div id="layout">    
-    <div id="mainNavBar">
-            <img src="images/logoW.png" id="logo"> 
-            <a href="index.html" id = 'home'>Home</a>
-            <a href="game.html" class = 'navbar'>Quiz</a>
-            <a href="chat.html"><div class="navbar">Chat</div></a>
-            
-        </div>  
-    
-    <div id="layout2">
-        <div id="title">These are some of the virus/infections that can be mistaken as MonkeyPox</div>
-        <div class="skinContainer">
-            <div class="header">
-                <h1>MonkeyPox</h1>
-                <img class ='skinImg' " src="images/monkeypoxHome.jpg">
-            </div>
-            <div class="infor">
-                <h2>Monkeypox is an infectious viral disease that can occur in humans and some other animals. Symptoms include fever, swollen lymph nodes, and a rash that forms blisters and then crusts over. The time from exposure to onset of symptoms ranges from five to twenty-one days. The duration of symptoms is typically two to four weeks. There may be mild symptoms, and it may occur without any symptoms being known. The classic presentation of fever and muscle pains, followed by swollen glands, with lesions all at the same stage, has not been found to be common to all outbreaks. Cases may be severe, especially in children, pregnant women or people with suppressed immune systems.</h2>
-            </div>
-        </div>
-
-        <div class="skinContainer">
-            <div class="header">
-                <h1>Scabies</h1>
-                <img class ='skinImg' src="images/scabbiesHome.jpg">
-            </div>
-            <div= class="infor">   
-                <h2>Scabies (also known as the seven-year itch) is a contagious skin infestation by the mite Sarcoptes scabiei. The most common symptoms are severe itchiness and a pimple-like rash. Occasionally, tiny burrows may appear on the skin. In a first-ever infection, the infected person will usually develop symptoms within two to six weeks. During a second infection, symptoms may begin within 24 hours. These symptoms can be present across most of the body or just certain areas such as the wrists, between fingers, or along the waistline. The head may be affected, but this is typically only in young children. The itch is often worse at night. Scratching may cause skin breakdown and an additional bacterial infection in the skin.</h2>
-            </div>
-        </div>
-
-        <div class="skinContainer">
-            <div class="header">
-                <h1>Eczema</h1>
-                <img class ='skinImg'  src="images/eczemaHome.jpg">
-            </div>
-            <div class="infor">
-                <h2>Dermatitis is inflammation of the skin, typically characterized by itchiness, redness and a rash. In cases of short duration, there may be small blisters, while in long-term cases the skin may become thickened. The area of skin involved can vary from small to covering the entire body. Dermatitis is often called eczema, and the difference between those terms is not standardized. The exact cause of the condition is often unclear. Cases may involve a combination of allergy and poor venous return</h2>
-            </div>
-        </div>
-        <div class="skinContainer">
-            <div class="header">
-                <h1>Acene</h1>
-                <img class ='skinImg'  src="images/acneHome.jpg"/>
-            </div>
-            <div class="infor">
-                <h2>Acne, also known as acne vulgaris, is a long-term skin condition that occurs when dead skin cells and oil from the skin clog hair follicles. Typical features of the condition include blackheads or whiteheads, pimples, oily skin, and possible scarring. It primarily affects skin with a relatively high number of oil glands, including the face, upper part of the chest, and back. The resulting appearance can lead to anxiety, reduced self-esteem, and, in extreme cases, depression or thoughts of suicide.</h2>
-            </div>    
-        </div>
-
-        <div class="skinContainer">
-            <div class="header">
-                <h1>Molluscum contagiosum</h1>
-                <img class ='skinImg' src="images/MolluscumCHome.jpg">
-            </div>
-
-            <div= class="infor">   
-                <h2>Molluscum contagiosum (MC), sometimes called water warts, is a viral infection of the skin that results in small raised pink lesions with a dimple in the center. They may become itchy or sore, and occur singularly or in groups. Any area of the skin may be affected, with abdomen, legs, arms, neck, genital area, and face being the most common. Onset of the lesions is around seven weeks after infection. They usually go away within a year without scarring.</h2>
-            </div>
-        </div>
-
-        <div class="skinContainer">
-            <div class="header">
-                <h1>Herpes</h1>
-                <img  class ='skinImg' src="images/herpesHome.jpg">
-            </div>
-            <div class="infor">
-                <h2>Herpes simplex is a viral infection caused by the herpes simplex virus. Infections are categorized based on the part of the body infected. Oral herpes involves the face or mouth. It may result in small blisters in groups often called cold sores or fever blisters or may just cause a sore throat</h2>
-            </div>
-        </div>
-
+  <div id='toggles'>
+    <div class="navBar">
+        <img id = 'logo' src="images/logoW.png" />
     </div>
+    <ul id = list>
+        <li>  <a href="index.html" id = 'home'>Home</a></li>
+        <li>  <a href="game.html" class = 'navbar'>Quiz</a></li>
+        <li>  <a href="chat.html" class="navbar">Chat</a></li>
+        <li>  <a href = 'doctor.html' class = 'navbar'>Appointment</a></li>
+    </ul>
+    </div>
+    
+  <br>
+
+        <button id = "blur"> Blur</button>
+        <div class = cards>
+    <!-- monkeypox:  -->
+        <div class="card">
+         <div class = skinTitle>
+    Monkey Pox
+         </div>
+         <div id = 'monkeydiv'>
+    <img id = 'monkeypox' src = 'images/monkeypoxHome.jpg'>
+         </div>
+    <div class = cardContent>
+      <h2>  A viral disease that spreads from close body to body contact. Symptoms include blisters, fever, rash and can last from 2-4 weeks.</h2>
+    </div>
+    <div id = info>
+      <a id="monkeyLink" href = 'https://www.cdc.gov/poxvirus/monkeypox/if-sick/transmission.html' target ="_blank">Read More </a>
+    </div>
+    </div>
+    
+    <!-- Scabbies: -->
+    <div class="card">
+      <div class = skinTitle>
+   Scabbies
+      </div>
+      <div id = 'scabbiesdiv'>
+    <img id = 'scabbies' src = 'images/scabbiesHome.jpg'>
+      </div>
+    <div class = cardContent>
+        <h2>A contagious skin infestation by the mite Sarcoptes scabiei. The most common symptoms are severe itchiness and pimples like rash.</h2>
+    </div>
+    <div id = info>
+    <a id="monkeyLink" href =  "https://www.cdc.gov/parasites/scabies/gen_info/faqs.html#:~:text=Scabies%20is%20an%20infestation%20of,a%20pimple%2Dlike%20skin%20rash." target ="_blank">Read More </a>
+    </div>
+    </div>
+    
+
+    <!-- Eczema: -->
+    <div class="card">
+      <div class = skinTitle>
+  Eczema
+      </div>
+      <div id = 'eczemadiv'>
+    <img id = 'eczema' src = 'images/eczemaHome.jpg'>
+      </div>
+    <div class = cardContent>
+        <h2>Characterized by itchiness, redness, and a rash. In the short term, there may be small blisters and in the long term the skin may thicken. </h2>
+    </div>
+    <div id = info>
+    <a id="monkeyLink" href = 'https://www.cdc.gov/poxvirus/monkeypox/if-sick/transmission.html' target ="_blank">Read More </a>
+    </div>
+    </div>
+    
+    <!-- Acne: -->
+    <div class="card">
+      <div class = skinTitle>
+   Acne
+      </div>
+      <div id="acnediv">
+    <img id = 'acne' src = 'images/acneHome.jpg'>
+      </div>
+    <div class = cardContent>
+        <h2>Long term skin condition that occurs when dead skin cells and oil from the skin clog hair follicles. Features include blackheads. & pimples. </h2>
+    </div>
+    <div id = info>
+    <a id="monkeyLink" href = "https://www.mayoclinic.org/diseases-conditions/acne/symptoms-causes/syc-20368047" ="_blank">Read More </a>
+    </div>
+    </div>
+    
+    <!-- Molluscum Contagiosum: -->
+    <div class="card">
+      <div class = skinTitle>
+Molluscum contagiosum
+      </div>
+      <div id = 'MCdiv'>
+    <img id = 'MC' src = 'images/MolluscumCHome.jpg'>
+      </div>
+    <div class = cardContent>
+        <h2>Viral infection of the skin resulting in small raised pink lesions with a dimple in the center. Occur regularly in groups mostly in the face.</h2>
 </div>
+    <div id = info>
+    <a id="monkeyLink" href =  "https://www.cdc.gov/poxvirus/molluscum-contagiosum/index.html" target ="_blank">Read More </a>
+    </div>
+    </div>
+    
+    <!-- Herpes: -->
+    <div class="card">
+      <div class = skinTitle>
+   Herpes
+      </div>
+      <div id="herpesdiv">
+    <img id = 'herpes' src = 'images/herpesHome.jpg'>
+      </div>
+    <div class = cardContent>
+        <h2>
+          Viral infection resulting in small blisters formed in groups called cold sores. Categorized By the area of the body infected.
+        </h2>
+    </div>
+    <div id = info>
+    <a id="monkeyLink" href = "https://www.cdc.gov/std/herpes/stdfact-herpes.htm" target ="_blank">Read More </a>
+    </div>
+    </div>
+    
+    </div>
+ <br>
 </body>
 </html>

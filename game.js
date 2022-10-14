@@ -18,7 +18,7 @@ let imageTest = document.querySelector('#testMonkey')
 let array = [
   "images/acne1.png",
   "images/monkeypox1.jpg",
-  "images/Scabies.jpg",
+  "images/scabies.jpg",
   "images/MolluscumC1.jpg",
   "images/monkeypox2.png",
   "images/herpes1.webp",
@@ -40,7 +40,8 @@ let wrong = [
   "https://www.cdc.gov/parasites/scabies/gen_info/faqs.html#:~:text=Scabies%20is%20an%20infestation%20of,a%20pimple%2Dlike%20skin%20rash.", //scabies
   "https://www.cdc.gov/poxvirus/molluscum-contagiosum/index.html",//molluscum
   "https://www.cdc.gov/poxvirus/monkeypox/symptoms.html",//monkey
-  "https://www.cdc.gov/std/herpes/stdfact-herpes.htm",//herpes
+  "https://www.cdc.gov/std/herpes/stdfact-herpes.htm",//herpes\
+  'https://www.mayoclinic.org/diseases-conditions/atopic-dermatitis-eczema/symptoms-causes/syc-20353273#:~:text=Atopic%20dermatitis%20(eczema)%20is%20a,irritating%20but%20it%27s%20not%20contagious.'
 
 ];
 let quizEnd = document.querySelector("#finish");

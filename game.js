@@ -147,3 +147,6 @@ if (state ==0){
     state = 0
 }
 }
+
+let index = document.querySelector('.home')
+index.onmouseover = alert('This page contains sensitive images on skin.')

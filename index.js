@@ -84,3 +84,6 @@ if (turn ==0){
     turn = 0
 }
 }
+
+let index = document.querySelector('.home')
+index.onmouseover = alert('This page contains sensitive images on skin.')

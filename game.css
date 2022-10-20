@@ -222,3 +222,8 @@ font-size: 30px;
     justify-content: space-between;
 }
 }
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+}

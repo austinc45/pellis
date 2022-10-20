@@ -323,3 +323,8 @@ background-color: rgb(247, 242, 242)
             314px;
         }
     }
+
+    footer{
+        display: flex;
+        justify-content: flex-end;
+    }

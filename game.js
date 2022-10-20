@@ -134,3 +134,16 @@ nextQ.onclick = function () {
   
   }
 };
+
+let dropdown = document.querySelector('#phone')
+let content = document.querySelector('#container')
+let state = 0
+dropdown.onclick = function(){
+if (state ==0){
+    content.style.display = 'block'
+    state = 1
+}else{
+    content.style.display = 'none'
+    state = 0
+}
+}

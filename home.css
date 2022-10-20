@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin:0;
+    font-family: serif;
 }
 body {
     font-family: serif;
@@ -9,37 +10,6 @@ a {
     text-decoration: none;
     font-family: serif;
 }
-
-#toggles {
-    display: flex;
-    align-items: center;
-    background-color:lightslategray;
-
-}
-
-.navBar {
-    margin: 0px 200px 0px 0px;
-    height: 100%;
-}
-
-.navbar{
-    color: black;
-}
-#logo{
-    width: 100px;
-    height: 100%;
-}
-
-#list{
-    list-style: none;
-}
-#list li{
-display: inline;
-}
-#list li a{
-   padding: 50px;
-   font-size: 50px;
-    }
 
 
 .card{
@@ -60,44 +30,45 @@ display: inline;
     width:100%;
     height: 200px;
     display: block;
-    filter: blur(8px);
+    filter: blur(30px);
 }
 
 #MC{
     width:100%;
     height: 200px;
     display: block;
-    filter: blur(8px);
+    filter: blur(30px);
 }
 #eczema{
     width:100%;
     height: 200px;
     display: block;
-    filter: blur(8px);
+    filter: blur(30px);
 }
 #monkeypox{
     width:100%;
     height: 200px;
     display: block;
-    filter: blur(8px);
+    filter: blur(30px);
 }
 #acne{
     width:100%;
     height: 200px;
     display: block;
-    filter: blur(8px);
+    filter: blur(30px);
 }
 #scabbies{
     width:100%;
     height: 200px;
     display: block;
-    filter: blur(8px);
+    filter: blur(30px);
 }
 .skinTitle{
     background-color: cadetblue;
     display: flex;
     justify-content: center;
-    font-size:20px ;
+    font-size:30px ;
+    text-align: center;
 }
 
 #monkeyLink{
@@ -108,6 +79,117 @@ text-decoration: none;
     margin: 0 auto;
     max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     gap:20px;
+}
+
+
+#toggles {
+    display: flex;
+    align-items: center;
+    background-color:lightslategray;
+    border-bottom: 2px solid black;
+
+}
+
+.navBar {
+    margin: 0px 200px 0px 0px;
+    height: 100%;
+}
+
+.navbar{
+    color: black;
+}
+.logo{
+    width: 100px;
+    height: 100px
+}
+
+
+#list{
+    list-style: none;
+    margin-left: 200px;
+}
+#list li{
+display: inline;
+}
+#list li a{
+   padding: 50px;
+   font-size: 50px;
+    }
+
+#phone{
+    display: none;
+}
+
+#container{
+    display: none;
+}
+
+#blur{
+
+ margin-bottom: 20px;
+    padding: 5px;
+    width: 100px
+    
+}
+#middle{
+    width: 1536px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:415px) {
+    #middle{
+        width: 414px;
+    }
+    #phone{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lightslategray;
+        font-size: 50px;
+        width: 414px;
+    }
+    #logo1{
+        width: 70px;
+        height: 70px;
+    }
+
+    #blur{
+        margin:20px
+    }
+    #toggles{
+        display: none;
+    }
+    #row1{
+        display: flex;
+        width: 414px;
+        align-items: center;
+        border:solid;
+    }
+   #small{
+    padding: 20px;
+   }
+
+    .link{
+        width: 344px;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-right-style: solid;
+    }
+    .space{
+        width: 70px;
+        background-color: white;
+    }
+    .partition{
+        display: flex;
+        width: 414px;
+    }
+    .cards{
+        gap: 50px
+      
+    }
 }

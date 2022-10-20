@@ -4,18 +4,22 @@
 }
 body {
     font-family: serif;
+    
 }
 a {
     text-decoration: none;
     font-family: serif;
 }
 
+
 #toggles {
     display: flex;
     align-items: center;
     background-color:lightslategray;
+    border-bottom: 2px solid black;
 
 }
+
 
 .navBar {
     margin: 0px 200px 0px 0px;
@@ -25,13 +29,15 @@ a {
 .navbar{
     color: black;
 }
-#logo{
+.logo{
     width: 100px;
-    height: 100%;
+    height: 100px
 }
+
 
 #list{
     list-style: none;
+    margin-left: 200px;
 }
 #list li{
 display: inline;
@@ -41,6 +47,56 @@ display: inline;
    font-size: 50px;
     }
 
+#phone{
+    display: none;
+}
+
+#container{
+    display: none;
+}
+@media (max-width:415px) {
+    #phone{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lightslategray;
+        font-size: 50px;
+        width: 414px;
+    }
+    #logo1{
+        width: 70px;
+        height: 70px;
+    }
+
+    #toggles{
+        display: none;
+    }
+    #row1{
+        display: flex;
+        width: 414px;
+        align-items: center;
+        border:solid;
+    }
+   
+
+    .link{
+        width: 344px;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-right-style: solid;
+    }
+    .space{
+        width: 70px;
+        background-color: white;
+    }
+    .partition{
+        display: flex;
+        width: 414px;
+    }
+    
+}
 #Quiz{
     color: #63A9BB;
     margin-right: 250px;
@@ -59,17 +115,28 @@ h1{
 #buttons{
     display:flex;
     justify-content: center;
+    align-items: center;
     
 }
 #buttons p{
     display: flex;
-    background-color: orange;
+    background-color: #63A9BB;
     border: solid black;
     margin-right: 25px;
     margin-left: 25px;
     padding: 5px;
     border-radius: 12px;
 }
+
+#next{
+    background-color: gray;
+    border: solid black;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 5px;
+    border-radius: 12px;
+}
+
 #quizGame{
     display: flex;
     flex-direction: column;
@@ -125,19 +192,29 @@ flex-direction: column;
 }
 #image{
     width: 95%;
-    border: solid orange;
+    border: solid #63A9BB;
     padding: 2px;
 }
 #buttons{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #buttons p {
+    display: flex;
+    justify-content: center;
     margin: 5px 0px 5px 0px;
+    width: 380px;
     text-align: center;
 }
+#next{
+    width: 380px;
+    display: flex;
+    justify-content: center;
+}
 #question{
-font-size: 60px;
+font-size: 30px;
 }
 #endQuiz{
     display: flex;

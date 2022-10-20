@@ -10,6 +10,62 @@ a {
     font-family: serif;
 }
 
+.btn{
+    background-color: gray;
+    border: 2px solid;
+    padding: 5px;
+}
+#toggles {
+    display: flex;
+    align-items: center;
+    background-color:lightslategray;
+    border-bottom: 2px solid black;
+
+}
+
+.navBar {
+    margin: 0px 200px 0px 0px;
+    height: 100%;
+}
+
+.navbar{
+    color: black;
+}
+.logo{
+    width: 100px;
+    height: 100px
+}
+
+
+#list{
+    list-style: none;
+    margin-left: 200px;
+}
+#list li{
+display: inline;
+}
+#list li a{
+   padding: 50px;
+   font-size: 50px;
+    }
+
+#phone{
+    display: none;
+}
+
+#container{
+    display: none;
+}
+
+body{
+    margin:0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    font-family: serif;
+}
+
 #toggles {
     display: flex;
     align-items: center;
@@ -17,11 +73,18 @@ a {
 
 }
 
-#logo{
-    width: 100px;
+.navBar {
+    margin: 0px 200px 0px 0px;
     height: 100%;
 }
 
+.navbar{
+    color: black;
+}
+.logo{
+    width: 100px;
+    height: 100px
+}
 
 #list{
     list-style: none;
@@ -34,112 +97,229 @@ display: inline;
    font-size: 50px;
     }
 
-
-.navBar {
-    margin: 0px 200px 0px 0px;
-    height: 100%;
+#phone{
+    display: none;
 }
 
-.navbar{
-    color: black;
+#container{
+    display: none;
 }
 
-.content{
-   font-size: 10px; 
-   background-color: lightslategrey;
-}
-.picture{
-    width: 280px;
-    height:280px
-}
 
-#cards{
-    margin: 0 auto;
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px;
+#form{
+    max-width: 500px;
+   margin-left: 260px;
+   margin-top: 20px;
+    border: 2px solid orangered;
+    padding: 2rem;
 }
+label{
+    display: block;
+    padding: 1rem 0.25rem;
+}
+ input, textarea{
+    display: block;
+    width: 500px;
+    border: 2px solid lightskyblue;
+    padding: 5px;
+ }
 
-.card{
-    width:280px ;
-}
-.end{
+ select{
+    display: block;
+    margin: 0;
+    width: 514px;
+    padding: 5px;
+    border: 2px solid lightskyblue;
+ }
+
+ .bottom{
+    background-color:whitesmoke;
+    border-top: 2px solid black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width:300px
     
-}
-.dermatologist{
-    text-align: center;
-    background-color: lightslategrey
-}
+    
+ }
+ .button{
+    padding: 2px;
+    color: black;
+    margin-left: 10px;
+    
+ }
+ #submit{
+    margin-top: 2rem;
+    padding: 5px;
+border:0px;
+background-color: rgb(247, 242, 242)
+ }
 
-
-    
-.rating {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-  
-    }
-    
-    .rating > input{
-     display:none;
-    }
-    
-    .rating > label {
-    position: relative;
-    width: 1.1em;
-    font-size: 5;/*change*/
-    color: #FFD700;
-    cursor: pointer;
-    }
-    
-    .rating > label::before{
-    content: "\2605";
-    position: absolute;
-    opacity: 0;
-    }
-    
-    .rating > label:hover:before,
-    .rating > label:hover ~ label:before {
-    opacity: 1 !important;
-    }
-    
-    .rating > input:checked ~ label:before{
-    opacity:1;
-    }
-    
-    .rating:hover > input:checked ~ label:before{ 
-    opacity: 0.4;
-     }
-
+.content{
+    font-size: 10px; 
+    background-color: lightgrey
+ }
+ .picture{
+     width: 280px;
+     height:280px
+ }
  
-#first{
-    width: 199px;
-   }
+ #cards{
+     margin: 0 auto;
+     max-width: 1000px;
+     display: grid;
+     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+     gap:20px;
+ }
+ .gap{
+    height: 280px;
+ }
+ .card{
+     width:280px ;
+     box-shadow: 0 0 10px rgba(36, 33, 33, 0.1);
+ }
+ .end{
+     display: flex;
+     justify-content: space-between;
+     height: 50px;
+     
+ }
+ .dermatologist{
+     text-align: center;
+     background-color: cadetblue
+ }
+ 
+ 
+     
+ .rating {
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: center;
    
-   #last{
-       width: 200px;
-   }
-   #number{
-       width: 173px;
-   }
-   #symptoms{
-       width: 201px;
-   }
-   #doctor{
-       width: 225px;
-   }
-   #date{
-       width: 195px;
-   }
+     }
+     
+     .rating > input{
+      display:none;
+     }
+     
+     .rating > label {
+     position: relative;
+     width: 1.1em;
+     font-size: 30px;/*change*/
+     color: #FFD700;
+     cursor: pointer;
+     }
+     
+     .rating > label::before{
+     content: "\2605";
+     position: absolute;
+     opacity: 0;
+     }
+     
+     .rating > label:hover:before,
+     .rating > label:hover ~ label:before {
+     opacity: 1 !important;
+     }
+     
+     .rating > input:checked ~ label:before{
+     opacity:1;
+     }
+     
+     .rating:hover > input:checked ~ label:before{ 
+     opacity: 0.4;
+      }
+ 
+  
+ #first{
+     width: 199px;
+    }
+    
+    #last{
+        width: 200px;
+    }
+    #number{
+        width: 173px;
+    }
+    #symptoms{
+        width: 201px;
+    }
+    #doctor{
+        width: 225px;
+    }
+    #date{
+        width: 195px;
+    }
+ 
+    #content{
+     display: block;
+     margin-left: 260px;
+     margin-top: 50px;
+    }
+    #content div {
+     margin: 7px;
+    }
 
-   #content{
-    display: block;
-    margin-left: 260px;
-    margin-top: 50px;
-   }
-   #content div {
-    margin: 7px;
-   }
+    @media (max-width:415px) {
+        #phone{
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: lightslategray;
+            font-size: 50px;
+            width: 414px;
+        }
+        #logo1{
+            width: 70px;
+            height: 70px;
+        }
+    
+        #blur{
+            margin:20px
+        }
+        #toggles{
+            display: none;
+        }
+        #row1{
+            display: flex;
+            width: 414px;
+            align-items: center;
+            border:solid;
+        }
+       #small{
+        padding: 20px;
+       }
+    
+        .link{
+            width: 344px;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-right-style: solid;
+        }
+        .space{
+            width: 70px;
+            background-color: white;
+        }
+        .partition{
+            display: flex;
+            width: 414px;
+        }
+        .card{
+            margin-left: 85px;
+        }
+        .cards{
+            gap: 50px
+          
+        }
+        #form{
+            margin: 20px;
+        }
+        input, textarea{
+            width: 300px;
+        }
+        select{
+            width: 
+            314px;
+        }
+    }

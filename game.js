@@ -18,7 +18,7 @@ let imageTest = document.querySelector('#testMonkey')
 let array = [
   "images/acne1.png",
   "images/monkeypox1.jpg",
-  "images/scabies.jpg",
+  "images/Scabies.jpg",
   "images/MolluscumC1.jpg",
   "images/monkeypox2.png",
   "images/herpes1.webp",
